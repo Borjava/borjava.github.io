@@ -1,0 +1,574 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+a {
+    color: #00e;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   
+   
+h1, h2, h4, p, a {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+a:visited {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+
+p {
+	margin-top: 5px;
+	line-height: 1.25;
+	text-align: justify;
+}
+   
+   
+html {
+	width: 100%;
+	height: 100%;
+	background-color: #2a2228;
+}   
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.splash-image-container{
+	position:absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url('../img/background_splash.jpg') 0% 100% no-repeat;
+	background-size: cover;	
+}
+   
+#background-container {
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: auto;
+	background-color: #2a2228;
+}
+
+.head-container {
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #ffffff;
+	z-index: 50;
+}
+
+#logo-container {
+	width: 50%;
+	float: left;
+}
+
+#logo-image {
+	width: auto;
+	height: 30px;
+}
+
+#menu-button-container {
+	height: 30px;
+	float: right;
+}
+
+#menu-button-image {
+	height: 100%;
+	width: auto;
+}
+
+#social-container {
+	position: absolute;
+	top: 80px;
+	left: 30px;
+}
+
+.social-images {
+	height: 42px;
+}
+#byline-container{
+	position: absolute;
+	top: 80px;
+	right: 30px;
+	width: 250px;
+}
+
+#byline-p{
+	font-weight: 300;
+	text-align: right;
+	font-size: 18px;
+}
+#copyright-container{
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	bottom: 30px;
+}
+
+#copyright-p{
+	font-size: 15px;
+}
+
+.char-container{
+	position: absolute;
+	left: 30px;
+	top: 140px;
+}
+
+#char-splash-img {
+}
+
+#menu-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #2a2228;
+	display: none;
+}
+
+#menu-links-container {
+	position: absolute;
+	top: 100px;
+	left: 30px;
+	right: 30px;
+	bottom: 50px;
+}
+
+.menu-link-p{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.menu-link-a{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.menu-link-a:hover{
+	color: #fcb040;
+}
+
+.separator {
+	width: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ffffff;
+}
+
+#menu-social-container {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.section-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #2a2228;
+	display: none;
+}
+#about-container {
+	
+}
+.head-image-container {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+#about-image-container-0 {
+	background: url('../img/img_about_0.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#about-image-container-1 {
+	background: url('../img/img_about_1.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#about-image-container-2 {
+	background: url('../img/img_about_2.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#factions-image-container-0 {
+	background: url('../img/img_factions_0.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#factions-image-container-1 {
+	background: url('../img/img_factions_1.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#factions-image-container-2 {
+	background: url('../img/img_factions_2.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#factions-image-container-3 {
+	background: url('../img/img_factions_3.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#factions-image-container-4 {
+	background: url('../img/img_factions_4.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#factions-image-container-5 {
+	background: url('../img/img_factions_5.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#media-image-container-0 {
+	background: url('../img/img_media_0.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#media-image-container-1 {
+	background: url('../img/img_media_1.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#media-image-container-2 {
+	background: url('../img/img_media_2.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+.subsection-title-container {
+	position: absolute;
+	right: 30px;
+	left: 30px;
+	top: 30px;
+	padding-top: 10px;
+}
+
+.body-container{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.scroll-container {
+	width: 100%;
+	margin-top: 30px;
+    margin-bottom: 30px;
+    height: 20px;
+}
+.scroll-image{
+	position: absolute;
+	right:30px;
+}
+
+.subsection-title-h1{
+	text-align: right;
+	margin: 0;
+}
+
+.subsection-title-container {
+	border-top: 2px solid #ffffff;
+}
+
+#storyline-title{
+	top: 80px;
+	padding-top: 0px;
+	border-top: none;
+}
+
+#freja-title{
+	top: 80px;
+	padding-top: 0px;
+	border-top: none;
+}
+#images-title{
+	top: 80px;
+	padding-top: 0px;
+	border-top: none;
+}
+
+.FAQ-q{
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+#about-scroll-2{
+	margin-bottom: 50px;
+}
+#media-scroll-1{
+	margin-bottom: 50px;
+}
+.media-image-container {
+	width: 100%;
+	height: 200px;
+}
+
+#media-image-0 {
+	background: url('../img/media-1-low.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#media-image-1 {
+	background: url('../img/media-2-low.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#media-image-2 {
+	background: url('../img/media-3-low.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#media-image-3 {
+	background: url('../img/media-4-low.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#media-image-4 {
+	background: url('../img/media-5-low.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+#video-body {
+	margin: 0;
+}
+
+.video-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; 
+	overflow: hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+.fa-container {
+    
+    background-image: url('../img/fa_banner_a.html');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 97px;
+}
+
+.fa-container:hover {
+    background-image: url('../img/fa_banner_b.html');
+}
+
+.wl-container {
+    background-image: url('../img/wl_banner_a.html');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top:5px;
+    width: 200px;
+    height: 52px;
+}
+
+.wl-container:hover {
+    background-image: url('../img/wl_banner_b.html');
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+}
